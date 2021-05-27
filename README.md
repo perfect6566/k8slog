@@ -26,13 +26,13 @@ Examples:
   &emsp; -c container name , Container name when multiple containers in pod    
   -f int    
   &emsp; -f 10,The number of lines from the end of the logs to show. Defaults to -1, showing all logs. (default -1)    
-  -kubeconfig string
+  -kubeconfig string    
   &emsp; (optional) absolute path to the kubeconfig file,default is ${HOME}/.kube/config    
   -l string    
   &emsp; -l app=nginx,Selector (label query) to filter on. If present, default to ".*" for the pod-query.    
-  -n string
+  -n string    
   &emsp; -n namespace (default "default")    
-  -r string
+  -r string    
   &emsp; -r inside means run inside k8s,by default it is running outside k8s (default "outside")    
   -s duration    
   &emsp; -s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.    
