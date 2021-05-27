@@ -13,16 +13,16 @@ Examples:
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -kubeconfig admin.kubeconfig    
 ## Options:    
   -c string    
-        -c container name , Container name when multiple containers in pod    
+  &emsp -c container name , Container name when multiple containers in pod    
   -f int    
-        -f 10,The number of lines from the end of the logs to show. Defaults to -1, showing all logs. (default -1)    
+  &emsp -f 10,The number of lines from the end of the logs to show. Defaults to -1, showing all logs. (default -1)    
   -kubeconfig string
-        (optional) absolute path to the kubeconfig file,default is ${HOME}/.kube/config    
+  &emsp (optional) absolute path to the kubeconfig file,default is ${HOME}/.kube/config    
   -l string    
-        -l app=nginx,Selector (label query) to filter on. If present, default to ".*" for the pod-query.    
+  &emsp -l app=nginx,Selector (label query) to filter on. If present, default to ".*" for the pod-query.    
   -n string
-        -n namespace (default "default")    
+  &emsp -n namespace (default "default")    
   -r string
-        -r inside means run inside k8s,by default it is running outside k8s (default "outside")    
+  &emsp -r inside means run inside k8s,by default it is running outside k8s (default "outside")    
   -s duration    
-        -s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.    
+  &emsp -s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.    
