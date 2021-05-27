@@ -13,7 +13,7 @@ Examples:
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -kubeconfig admin.kubeconfig    
 ## Options:    
   -c string    
-  &emsp -c container name , Container name when multiple containers in pod    
+  &emsp; -c container name , Container name when multiple containers in pod    
   -f int    
   &emsp -f 10,The number of lines from the end of the logs to show. Defaults to -1, showing all logs. (default -1)    
   -kubeconfig string
