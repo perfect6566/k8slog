@@ -1,6 +1,12 @@
 # k8slog
 This is a tool to Tail logs from multiple pods and containers inside Kubernetes
 
+
+git clone https://github.com/perfect6566/k8slog.git    
+cd k8slog && go build -o k8slog    
+
+then you can get the k8slog in your k8slog folder   
+
 ## Usage: 
 
 ./k8slog  [-n namespace] [-f tail lines] [-s since ] [-l k8s label Selector] [-c container name] [-r running inside or outside k8s,default is "o
