@@ -1,14 +1,11 @@
 # k8slog
-This is a tool to check multiple pods and containers logs from Kubernetes
+This is a tool to Tail logs from multiple pods and containers inside Kubernetes
 
 ## Usage: 
 
-<<<<<<< HEAD
-./k8slog  [-n namespace] [-f tail lines] [-s since ] [-l k8s label Selector] [-c container name] [-r running inside or outside k8s,default is "outside" k8s] [-kubeconfig  absolute path to the kubeconfig file]
-=======
 ./k8slog  [-n namespace] [-f tail lines] [-s since ] [-l k8s label Selector] [-c container name] [-r running inside or outside k8s,default is "o
 utside" k8s] [-kubeconfig  absolute path to the kubeconfig file]
->>>>>>> c29ecd0833c37eaee3d1b93b9808e8be4e0f3ba3
+
 
 Examples:
 
@@ -21,19 +18,19 @@ Examples:
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs 
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername    
 
-<<<<<<< HEAD
-//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs and it is used as pod inside k8s
-./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside    
-
-//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs with the kubeconfig file
-=======
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs and it is u
 sed as pod inside k8s
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside    
 
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs with the ku
 beconfig file
->>>>>>> c29ecd0833c37eaee3d1b93b9808e8be4e0f3ba3
+
+//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs and it is u
+sed as pod inside k8s
+./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside    
+
+//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs with the ku
+beconfig file
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -kubeconfig admin.kubeconfig    
 ## Options:    
   -c string    
@@ -49,8 +46,5 @@ beconfig file
   -r string    
   &emsp; -r inside means run inside k8s,by default it is running outside k8s (default "outside")    
   -s duration    
-<<<<<<< HEAD
   &emsp; -s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.    
-=======
-  &emsp; -s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.  
->>>>>>> c29ecd0833c37eaee3d1b93b9808e8be4e0f3ba3
+
