@@ -28,10 +28,12 @@ var (
 	kubeconfig string
 	config *rest.Config
 	err error
+
 )
 
 
 func main() {
+	flag.Usage=usage
 
 	flag.Int64Var(&tailline,"f",-1,"-f 10,The number of lines from the end of the logs to show. Defaults to -1, showing all logs.")
 	flag.DurationVar(&sincesecond,"s",0,"-s 10s : Return logs newer than a relative duration like 5s, 2m, or 2.5h.")
@@ -43,8 +45,6 @@ func main() {
 	flag.Parse()
 
 
-
-	flag.Usage=usage
 	//如果参数少于2个，则打印usage并退出
 	if len(flag.Args())>0||flag.CommandLine.NFlag()==0{
 		flag.Usage()

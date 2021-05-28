@@ -187,7 +187,7 @@ func producepodlog(clientset *kubernetes.Clientset,namespace string,pod corev1.P
 				break;
 			}
 		}
-		fmt.Println(pod.Name, string(buf))
+		fmt.Println(HGreen(pod.Name), string(buf))
 	}
 }
 
