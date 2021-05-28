@@ -9,28 +9,28 @@ utside" k8s] [-kubeconfig  absolute path to the kubeconfig file]
 
 Examples:
 
-//Tail log from pods with label singlecontainer in ns mynamespace and follow the last 100 line logs 
+//Tail log from pods with label singlecontainer in ns mynamespace and follow the last 100 line logs    
 ./k8slog -n mynamespace -l label=singlecontainer -f 100      
 
-//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the last 100 line logs 
+//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the last 100 line logs      
 ./k8slog -n mynamespace -l label=muticontainer -f 100 -c containername    
 
-//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs 
+//Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs     
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername    
 
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs and it is u
-sed as pod inside k8s
-./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside    
+sed as pod inside k8s    
+./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside        
 
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs with the ku
-beconfig file
+beconfig file    
 
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs and it is u
-sed as pod inside k8s
+sed as pod inside k8s    
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -r inside    
 
 //Tail log from container named containername in pods with label muticontainer in ns mynamespace and follow the recent 1.5 hour logs with the ku
-beconfig file
+beconfig file    
 ./k8slog -n mynamespace -l label=muticontainer -s 1.5h -c containername -kubeconfig admin.kubeconfig    
 ## Options:    
   -c string    
